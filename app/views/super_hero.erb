@@ -1,1 +1,63 @@
-
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super Hero Form</title>
+</head>
+<body>
+    <h1>Create a Team and Heroes!</h1>
+    <form action="/teams" method="post">
+        <div>
+        <label for="team[name]">Team Name:</label>
+        <input name="team[name]" type="text" id="team[name]">
+        </div>
+        <div>
+        <label for="team[motto]">Team Motto:</label>
+        <input name="team[motto]" type="text" id="team[motto]">
+        </div>
+        <h2>Hero 1</h2>
+        <div>
+        <label for="member1_name">Hero's Name:</label>
+        <input id="member1_name" type="text" name="team[members][][name]">
+        <div>
+        <label for="member1_power">Hero's Power:</label>
+        <input type="text" id="member1_power" name="team[members][][power]">
+        </div>
+        <div>
+        <label for="member1_bio">Hero #1 Bio:</label>
+        <input type="text" id="member1_bio" name="team[members][][bio]">
+        </div>
+        <h2>Hero 2</h2>
+        <div>
+        <label for="member2_name">Hero's Name:</label>
+        <input type="text" id="member2_name" name="team[members][][name]">
+        </div>
+        <div>
+        <label for="member2_power">Hero's Power:</label>
+        <input type="text" id="member2_power" name="team[members][][power]">
+        </div>
+        <div>
+        <label for="member2_bio">Hero #2 Bio:</label>
+        <input type="text" id="member2_bio" name="team[members][][bio]">
+        </div>
+        <h2>Hero #3</h2>
+        <div>
+        <label for="member3_name">Hero's Name:</label>
+        <input type="text" id="member3_name" name="team[members][][name]">
+        </div>
+        <div>
+        <label for="member3_power">Hero's Power:</label>
+        <input type="text" id="member3_power" name="team[members][][power]">
+        </div>
+        <div>
+        <label for="member3_bio">Hero #3 Bio:</label>
+        <input type="text" id="member3_bio" name="team[members][][bio]">
+        </div>
+        <br />
+        <input type="submit" id="submit" name="submit">    
+    </form>
+</body>
+</html>
